@@ -1,0 +1,295 @@
+
+/*Fonts*/
+@font-face {
+    font-family: 'DIN-NEXT-BOLD';
+    src: url(../fonts/DIN-NEXT-BOLD.otf);
+}
+@font-face {
+    font-family: 'DIN-NEXT-MEDIUM';
+    src: url(../fonts/DIN-NEXT-MEDIUM.otf);
+}
+@font-face {
+    font-family: 'DIN-NEXT-REGULAR';
+    src: url(../fonts/DIN-NEXT-REGULAR.otf);
+}
+
+body{
+    direction: rtl;
+    text-align: right;
+    font-family: 'DIN-NEXT-REGULAR';
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'DIN-NEXT-BOLD';   
+}
+
+
+/* Animation */
+.slideInRight {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.pull-left{
+    float: right;
+}
+.pull-right{
+    float: left;
+}
+
+/* Owl-Carousel */
+.owl-carousel.owl-loaded{
+    direction: ltr;
+}
+.owl-carousel .owl-item {
+    direction: rtl;
+}
+
+/* Icons */
+.fa-arrow-circle-right:before {
+    content: "\f0a8";
+}
+.fa-angle-double-left:before {
+    content: "\f101";
+}
+.fa-angle-double-right:before {
+    content: "\f100";
+}
+
+/* Forms
+========================= */
+input, button, select, textarea, .ui-widget {
+    font-family: 'DIN-NEXT-REGULAR';
+}
+
+.ui-selectmenu-text {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.ui-selectmenu-icon.ui-icon {
+    float: left;
+}
+/* header
+=========================== */
+.header-style-two .main-box .logo-box {
+    padding: 10px 0px;
+}
+.header-style-two .main-box .logo-box:before {
+    right: auto;
+    left: 0px;
+}
+
+.main-menu .navigation > li {
+    float: right;
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+/* Main-Slider
+=========================== */
+.main-slider{
+    direction: ltr;
+}
+.main-slider h2 {
+    line-height: 2em;
+}
+
+/* Page-Title
+=========================== */
+.page-breadcrumb {
+    left: auto;
+    right: 0px;
+    padding: 15px 0px 15px 45px;
+    border-right: none;
+    border-left: 4px solid #fbb908;
+}
+.page-breadcrumb:after {
+    right: auto;
+    left: 100%;
+}
+.page-breadcrumb li {
+    margin-right: 0;
+    margin-left: 10px;
+    padding-right: 0;
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: 'DIN-NEXT-MEDIUM';
+}
+.page-breadcrumb li:last-child {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.page-breadcrumb li:first-child::after {
+    right: auto;
+    left: -3px;
+}
+
+/* Home-Page
+================================ */
+/* About-Section */
+.about-section:before {
+    right: auto;
+    left: 0px;
+    transform: rotate(270deg);
+}
+
+/* Services-Section */
+.services-block-two .inner-box .lower-box {
+    padding: 10px 0px;
+}
+.services-block-two .inner-box .lower-box h3 a{
+    font-size: 17px;
+}
+
+/* Projects-Section */
+.project-tab .tabs-header{
+    direction: rtl;
+}
+.p-tab.active-tab .project-block{
+    height: 379px;
+}
+.project-block .inner-box,
+.project-block .inner-box .image,
+.project-block .inner-box .image > img{
+    width: 100%;
+    height: 100%;
+}
+.project-block .inner-box .image .overlay-box .content .see-project .fa {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.project-block .inner-box .image .overlay-box .content .see-project .fa.fa-angle-right:before {
+    content: "\f104" !important;
+}
+.project-block .inner-box .image .overlay-box .content .see-project .fa.fa-angle-left:before {
+    content: "\f105" !important;
+}
+
+/* Subscribe-Section */
+.subscribe-section-two .inner-container{
+    padding-left: 0;
+    padding-right: 300px;
+}
+.subscribe-section-two .inner-container h2 {
+    left: auto;
+    right: 0px;
+}
+
+
+/* Testimonial-Section */
+.testimonial-block .inner-box {
+    padding-left: 0;
+    padding-right: 135px;
+}
+
+.testimonial-block .inner-box .image {
+    left: auto;
+    right: 0px;
+}
+.testimonial-block .inner-box .content:before {
+    left: auto;
+    right: 0px;
+    border-left: none;
+    border-right: 100px solid transparent;
+}
+.testimonial-block .inner-box:hover .content:before{
+	left:auto;
+	right:-60px;
+}
+.testimonial-section .owl-prev, .testimonial-section .owl-next {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* Blog-Section */
+.news-block-three .inner-box .image .option-box {
+    right: auto;
+    left: 0px;
+    border-radius: 0px 50px 50px 50px;
+}
+.news-block-three .inner-box .image .option-box:before {
+    border-radius: 0px 50px 50px 50px;
+}
+.news-block-three .inner-box .image .post-info li {
+    margin-right: 0;
+    margin-left: 10px;
+    padding-right: 0;
+    padding-left: 10px;
+}
+.news-block-three .inner-box .image .post-info li:after {
+    right: auto;
+    left: -6px;
+}
+
+/* Footer
+=========================== */
+footer .footer-bottom .footer-nav li {
+    padding-left: 0;
+    padding-right: 20px;
+    margin-left: 0;
+    margin-right: 20px;
+    border-left: none;
+    border-right: 2px solid rgba(255,255,255,0.40);
+}
+
+
+/* About-Page
+=================================*/
+.reason-section .image-column .image{
+    min-height: 613px;
+}
+.reason-section .image-column .image > img{
+/*    width: 100%;*/
+    height: 100%;
+}
+.consult-form .form-group .btn-detail {
+    margin-left: 0;
+    margin-right: 30px;
+}
+.consult-form .form-group .btn-detail .fa {
+    float: left !important;
+    margin-right: 10px !important;
+}
+
+/* Blog-Page
+=================================*/
+.news-block .inner-box .image {
+    max-height: 323px;
+}
+.news-block .inner-box .image > img{
+    width: 100%;
+    height: 100%;
+}
+
+.news-block .inner-box .image .post-date {
+    right: auto;
+    left: 0px;
+    border-radius: 0px 50px 50px 50px;
+}
+.news-block .inner-box .image .post-date:before {
+    border-radius: 0px 50px 50px 50px;
+}
+.news-block .inner-box .lower-content .post-meta li {
+    padding-right: 0;
+    padding-left: 12px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+.news-block .inner-box .lower-content .post-meta li:after {
+    right: auto;
+    left: 0px;
+}
